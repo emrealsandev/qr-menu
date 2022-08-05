@@ -24,6 +24,40 @@
             :desc="item.desc"
             ></menu-item>
         </div> -->
+        
+        <style>
+                    .single-menu-item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px 0;
+                }
+
+                .single-menu-item .menu-item-header {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.1rem;
+                }
+
+                .menu-item-description {
+                    margin-top: 5px;
+                    padding: 10px 0;
+                    font-size: 0.9rem;
+                }
+                </style>
+                <div class="sub_category" v-for="(category,index) in data.menu">
+                    <div class="sub_category_name">{{category.label}}</div>
+                    <div class="single-menu-item" v-for="(item,index) in category.children">
+                        <div class="menu-item-header">
+                            <p class="menu-item-name">{{item.label}}</p>
+                            <p class="menu-item-desc">{{item.desc}}</p>
+                            <p>{{item.price}}</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
     </div>
 </template>
 
