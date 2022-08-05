@@ -76,5 +76,16 @@ export default {
       ],
     };
   },
+
+  
 };
 </script>
+
+<style scoped>
+background-dark {
+  background-color: black;
+}
+background-white{
+  background-color: white;
+}
+</style>
