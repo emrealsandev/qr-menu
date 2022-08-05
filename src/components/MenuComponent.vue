@@ -1,11 +1,7 @@
 <template>
   <div >
     <menu-item-component 
-    v-for="(item,index) in menu"
-    :key="index"
-    :label="item.label"
-    :image="item.image"
-    :data="item.children"
+    :menu = "menu"
     />
   </div>
 </template>
@@ -25,7 +21,7 @@ export default {
           children: [
             {
               label: "Yumurta",
-              price: 35,
+              price: "35,50",
               desc: "Sağında veya solunda yumurta",
             },
             {
@@ -81,11 +77,6 @@ export default {
 };
 </script>
 
-<style scoped>
-background-dark {
-  background-color: black;
-}
-background-white{
-  background-color: white;
-}
+<style >
+
 </style>

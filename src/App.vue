@@ -31,9 +31,14 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,400&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: content-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
 }
 </style>
